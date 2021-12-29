@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Big Astra</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./js/xml2json.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<div class="header">
+    <a href="https://bigastra.tk"><img class="logo-img" src="images/big-astra-logo.png" alt="big-astra-logo"></a>
+    <div class="header-menu">
+        <img id="exclusive_button" class="header-menu-img" src="./images/icons8-эксклюзивный-продукт-100.png">
+        <img id="news_button" class="header-menu-img" src="./images/icons8-новости-100.png">
+        <img id="worldwide_button" class="header-menu-img" src="./images/icons8-google-earth-100.png">
+        <img id="telescope_button" class="header-menu-img" src="./images/icons8-телескоп-100.png">
+        <img id="marked_button" class="header-menu-img" src="./images/icons8-закладка-лента-100.png">
+    </div>
+    <div class="header-account">
+        <img id="account_button" class="header-menu-img" src="./images/icons8-пользователь-100.png">
+    </div>
+</div>
+<div class="main-div">
+    <div id="exclusive" class="main-card">
+        <a class="title">Эксклюзив</a>
+    </div>
+    <div id="news" class="main-card">
+        <a class="title">Новости</a>
+<!--        <div style="display: inline-flex; gap: 10px; margin: 20px; align-items: center;">-->
+<!--            <a style="font-size: 14px;">ВАШИ ТЕМЫ</a>-->
+<!--            <button class="button-topic">Астрономия</button>-->
+<!--            <button class="button-topic">Физика</button>-->
+<!--            <button class="button-topic">Технологии</button>-->
+<!--        </div>-->
+        <div class="news-in-div"></div>
+    </div>
+    <div id="worldwide" class="main-card">
+        <a class="title">Со всего мира</a>
+        <div class="worldwide-news-in-div"></div>
+    </div>
+    <div id="telescope" class="main-card">
+        <a class="title">Своя обсерватория</a>
+        <iframe style="width: -webkit-fill-available; height: 100vh; border: none" src="https://stellarium-web.org"></iframe>
+    </div>
+    <div id="marked" class="main-card">
+        <a class="title">Читать позже</a>
+    </div>
+    <div id="account" class="main-card">
+        <a class="title">Аккаунт</a>
+    </div>
+</div>
+<!--<div class="main-div">-->
+<!--    <h1>Собственные статьи</h1>-->
+<!--    <div class="main-in-div custom">-->
+
+<!--    </div>-->
+<!--    <div style="width: auto; padding: 10px; background: #ffffff; margin-bottom: 20px; display: flex;">-->
+<!--        <h1 style="margin: 0">Новости</h1>-->
+<!--    </div>-->
+<!--    <div class="main-in-div news">-->
+
+<!--    </div>-->
+<!--    <h1>На английском</h1>-->
+<!--    <div class="main-in-div english">-->
+
+<!--    </div>-->
+<!--</div>-->
+</body>
+</html>

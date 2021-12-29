@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loew Next';
+    src: url('../fonts/LoewNext-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    font-family: "Loew Next", serif, -apple-system;
+    overflow: hidden;
+}
+
+.header {
+    width: 45px;
+    height: -webkit-fill-available;
+    padding: 5px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    border-right: #d3d3d3 solid 1px;
+}
+.header-menu {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+}
+.header-account {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+.header-menu-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    filter: opacity(40%);
+    transition: 0.1s;
+}
+
+.header-menu-img:hover {
+    filter: opacity(90%);
+    cursor: pointer;
+}
+.choosed-img {
+    filter: opacity(90%);
+}
+h1 {
+    font-size: x-large;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+h2 {
+    font-size: medium;
+}
+h3 {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.title {
+    display: block;
+    color: #1f1f1f;
+    font-weight: 700;
+    font-size: 48px;
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-menu-text {
+    font-weight: 500;
+}
+
+.main-div {
+    width: -webkit-fill-available;
+    height: 100vh;
+    display: block;
+    margin-left: 55px;
+    margin-top: 0;
+    margin-right: 0;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-card {
+    position: absolute;
+    display: none;
+    padding: 25px;
+    width: -webkit-fill-available;
+    height: 1000px;
+}
+
+.worldwide-news-in-div, .news-in-div {
+    width: -webkit-fill-available;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+.news-card {
+    width: auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #f6f6f6;
+    /*background: linear-gradient(90deg, rgba(153, 0, 208, 0.2) 30%, rgba(3, 36, 76, 0.2) 60%, rgba(0, 133, 100, 0.2) 100%);*/
+    padding: 25px;
+}
+.news-card-image {
+    width: 100%;
+    height: 20vw;
+    display: block;
+    object-fit: cover;
+    /*border-radius: 10px;*/
+}
+
+.button-topic {
+    font-family: "Loew Next", serif, -apple-system;
+    font-weight: 500;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    background-color: #ececec;
+    border-radius: 50px;
+}
+
