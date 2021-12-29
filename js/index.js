@@ -4,6 +4,7 @@ let x2js = new X2JS();
 
 $(document).ready(async function() {
     main()
+    exlusive()
     generate_news()
     worldwide()
 })
@@ -193,4 +194,25 @@ function worldwide() {
 
     // https://news.google.com/rss/search?q=Космос&hl=ru-RU&gl=RU&ceid=RU:ru
     // https%3A//news.google.com/rss/search%3Fq%3D%u041A%u043E%u0441%u043C%u043E%u0441%26hl%3Dru-RU%26gl%3DRU%26ceid%3DRU%3Aru
+}
+
+function exlusive() {
+    $.get("./docs/exclusive.json", function (data, error) {
+        let json_cards = data.files
+        for (data of json_cards) {
+            let html_card = `
+                <form action="${data.link}">
+                    <div class="news-card">
+                        <div>
+                            <h2 style="font-size: 18px; margin-top: 0;">${data.title}</h2>
+                        </div>
+                        <div>
+                            <a href="${data.link}" class="read-article-button">Читать статью</a>
+                        </div>
+                    </div>
+                </form>
+                `
+            $(".exclusive-in-div").append(html_card)
+        }
+    })
 }
