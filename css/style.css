@@ -193,10 +193,10 @@ h3 {
     display: none;
     padding: 25px;
     width: -webkit-fill-available;
-    height: 1000px;
+    height: fit-content;
 }
 
-.worldwide-news-in-div, .news-in-div {
+.exclusive-in-div, .worldwide-news-in-div, .news-in-div {
     width: -webkit-fill-available;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
