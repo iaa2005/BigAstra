@@ -6,6 +6,10 @@
     <link href="./css/style.css" rel="stylesheet">
     <script src="./js/xml2json.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="./js/index.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,6 +23,7 @@
         <img id="exclusive_button" class="header-menu-img" src="./images/icons8-эксклюзив-100.png">
         <img id="news_button" class="header-menu-img" src="./images/icons8-новости-100.png">
         <img id="worldwide_button" class="header-menu-img" src="./images/icons8-google-earth-100.png">
+        <img id="youtube_button" class="header-menu-img" src="./images/icons8-youtube-play-100.png">
         <img id="telescope_button" class="header-menu-img" src="./images/icons8-телескоп-100.png">
         <img id="marked_button" class="header-menu-img" src="./images/icons8-закладка-лента-100.png">
     </div>
@@ -44,6 +49,10 @@
     <div id="worldwide" class="main-card">
         <a class="title">Со всего мира</a>
         <div class="worldwide-news-in-div"></div>
+    </div>
+    <div id="youtube" class="main-card">
+        <a class="title">Видео</a>
+        <div class="youtube-in-div"></div>
     </div>
     <div id="telescope" class="main-card">
         <a class="title">Своя обсерватория</a>
