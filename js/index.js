@@ -262,7 +262,7 @@ function exlusive() {
                             <h2 style="font-size: 18px; margin-top: 0;">${data.title}</h2>
                         </div>
                         <div>
-                            <a href="${data.link}" class="read-article-button">Читать статью</a>
+                            <a href="${data.link}" class="read-article-button">Читать</a>
                         </div>
                     </div>
                 </form>
